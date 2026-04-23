@@ -241,6 +241,12 @@
     background-size: cover;
     border-radius: 10px;
     position:relative;
+    transition: all 0.3s ease;
+}
+
+.collections_card_container .card:hover
+{
+    transform: scale(1.05);
 }
 
 .card1
@@ -300,8 +306,9 @@
 .popular_locations h1
 {
     display: flex;
-    font-weight: 500;
-    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 2rem;
     margin-top: 5rem;
     margin-left: 0.5rem;
     color: rgb(42, 40, 40);
@@ -311,22 +318,30 @@
 {    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
 }
 
 .container_places .places_card h2
 {
-    font-weight: 300;
-    font-size: 23px
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 0.5rem;
 }
 
 .container_places .places_card
 {
-    border-radius: 10px;
-    padding: 5px;
+    border-radius: 12px;
+    padding: 1rem;
     border: 1px solid #e0e0e0;
     font-weight: 300;
-    font-size: 15px;
-    margin: 9px;
+    font-size: 16px;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.container_places .places_card:hover
+{
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 #see_more
@@ -334,8 +349,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 17px;
-    
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    grid-column: 1 / -1;
 }
 
 @media only screen and (max-width: 900px)
